@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/frankies-logo.png">
+    <link rel="stylesheet" href="./build/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Frankies Bar & Café</title>
+</head>
+<body>
+    <!-- Background noise -->
+    <div class="bg"></div>
+    <!-- Page wrapepr -->
+    <div class="wrapper grid grid-rows-[minmax(100px,_auto)_500px_1fr_100px] w-screen font-LuxuriousRoman text-white">
+        <!-- Header section -->
+        <header class="nav row-start-1 row-end-1 col-span-3 p-1 px-4 lg:px-16">
+            <!-- Navigation menu -->
+            <nav class="font-playfair">
+                <ul class="hidden lg:flex justify-around mt-8 font-playfair">
+                    <!-- Left -->
+                    <li class="mt-4 flex justify-between w-1/4">
+                        <a class="hover:underline" href="./layout.html">Home</a>
+                        <a class="hover:underline" href="./layout.html">Drinks</a>
+                        <a class="hover:underline" href="./layout.html">Gallery</a>
+                        <a class="hover:underline" href="./layout.html">Contact</a>
+                    </li>
+                    <!-- Center -->
+                    <li class="text-3xl lg:text-5xl w-2/4 text-center">                        
+                        <a href="./layout.html">Fränkies Bar & Café</a>
+                    </li>
+                    <!-- Right -->
+                    <li class="mt-4 flex justify-between w-1/4">
+                        <i class="fab fa-instagram text-xl mt-1"></i>
+                        <i class="fab fa-facebook text-xl mt-1"></i>
+                        <a class="hover:underline" href="./layout.html">en</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Mobile menu -->
+            <div class="lg:hidden p-8 text-2xl  font-playfair">
+                <div class="flex flex-1 justify-between">
+                    <button class="mobile-menu-button">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <a href="./layout.html">Fränkies Bar & Café</a>
+                    <div></div>
+                </div>
+                <div class="mobile-menu mt-4 hidden lg:hidden ">
+                    <ul class="text-sm">
+                        <li class="p-2 hover:bg-gray-200"><a href="./layout.html">Home</a></li>
+                        <li class="p-2 hover:bg-gray-200"><a href="./layout.html">Drinks</a></li>
+                        <li class="p-2 hover:bg-gray-200"><a href="./layout.html">Gallery</a></li>
+                        <li class="p-2 hover:bg-gray-200"><a href="./layout.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero section --> 
+        <section class="hero h-screen col-span-3 flex flex-col-reverse md:flex-row relative mt-4">
+            <div class="first-section md:w-3/5 h-full min-w-96 text-center">
+                <div class="uppercase text-5xl md:text-6xl lg:text-8xl p-6 font-ultra xl:text-8xl xl:pl-40 mb-6 mr-[-16rem] overlapping md:absolute text-left left-16">
+                    Outstanding <br /> drinks,  great <br /> tunes & a special <br /> atmosphere
+                </div>
+            </div>
+            <div class="hidden md:block mt-8">
+                <img src="https://via.placeholder.com/720" alt="">
+            </div>
+            <!-- 
+            <div class="second-section md:min-w-2/5 z-10 mt-6">
+                <div class="hidden md:block image w-96 h-96 mt-8">
+                    <img src="https://via.placeholder.com/800" alt="">
+                </div>
+                <div class="md:hidden w-1/2 mx-auto">
+                    <img src="https://via.placeholder.com/250" alt="placeholder">
+                </div>
+            </div>
+            -->
+        </section>
+        
+    </div>    
+    <script src="./main.js"></script>
+</body>
+</html>
