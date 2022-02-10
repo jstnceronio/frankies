@@ -21,6 +21,5 @@ document.querySelector('.btn').onclick = function (e) {
 
   menu.classList.toggle('is-active');
   btn.classList.toggle('is-active');
-
   e.preventDefault();
 }

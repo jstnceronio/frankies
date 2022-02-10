@@ -13,7 +13,7 @@
     <!-- Background noise -->
     <div class="bg"></div>
     <!-- Page wrapepr -->
-    <div class="wrapper grid grid-rows-[minmax(100px,_auto)_500px_1fr_100px] w-screen font-LuxuriousRoman text-white">
+    <div class="wrapper grid grid-rows-[minmax(100px,_auto)_800px_1fr_300px] w-screen font-LuxuriousRoman text-white">
         <!-- Header section -->
         <header class="nav row-start-1 row-end-1 col-span-3 p-1 px-4 lg:px-16">
             <!-- Navigation menu -->
@@ -21,17 +21,17 @@
                 <ul class="hidden lg:flex justify-around mt-8 font-playfair">
                     <!-- Left -->
                     <li class="mt-4 flex justify-between w-1/4">
-                        <a class="hover:underline" href="./layout.html">Home</a>
-                        <a class="hover:underline" href="./layout.html">Drinks</a>
-                        <a class="hover:underline" href="./layout.html">Gallery</a>
-                        <a class="hover:underline" href="./layout.html">Contact</a>
+                        <a class="border-b-2" href="./frankies.html">Home</a>
+                        <a class="hover:border-b-2" href="./drinks.html">Drinks</a>
+                        <a class="hover:border-b-2" href="./events.html">Gallery</a>
+                        <a class="hover:border-b-2" href="./contact.html">Contact</a>
                     </li>
                     <!-- Center -->
                     <li class="text-3xl lg:text-5xl w-2/4 text-center">                        
-                        <a href="./layout.html">Fränkies Bar & Café</a>
+                        <a href="./frankies.html">Fränkies Bar & Café</a>
                     </li>
                     <!-- Right -->
-                    <li class="mt-4 flex justify-between w-1/4">
+                    <li class="mt-4 flex justify-between w-1/4 gap-10">
                         <i class="fab fa-instagram text-xl mt-1"></i>
                         <i class="fab fa-facebook text-xl mt-1"></i>
                         <a class="hover:underline" href="./layout.html">en</a>
@@ -79,12 +79,16 @@
         </header>
 
         <!-- Hero section --> 
-        <section class="h-screen col-span-3 flex flex-col md:flex-row relative mt-12">
+        <section class="h-screen col-span-3 flex flex-col md:flex-row relative mt-8">
             <!-- Text section --> 
-            <div class="md:w-3/5 h-2/4 md:my-12 lg:text-center p-10 md:p-6 ">
-                <div class="font-ultra tracking-wide leading-tight md:absolute text-center left-0 right-0 font-bold w-full ml-auto mr-auto uppercase 
+            <div class="md:w-3/5 h-2/4 md:my-12 lg:text-center p-10 md:p-4 ">
+                <div class="lg:w-3/4 md:text-center md:w-1/2 font-ultra tracking-wide leading-tight md:absolute text-center left-0 right-0 font-bold w-full ml-auto mr-auto uppercase 
                 text-5xl md:text-7xl lg:text-8xl xl:text-[8rem]">
-                    Outstanding drinks, great <br /> tunes & a special atmosphere
+                    Outstanding drinks, great tunes & a special atmosphere
+                </div>
+
+                <div class="absolute bottom-56 left-16 border-b-2 hover:border-b-slate-600">
+                    <a href="#maps">Scroll down</a>
                 </div>
             </div>
             <!-- Image section --> 
@@ -100,7 +104,7 @@
                     <!--radio buttons end-->
                     <!--slide images start-->
                     <div class="slide first">
-                        <img src="https://via.placeholder.com/950" alt="placeholder">
+                        <img src="./img/placeholder.png" alt="placeholder">
                     </div>
                     <div class="slide">
                         <img src="https://via.placeholder.com/720" alt="placeholder">
@@ -136,6 +140,67 @@
                 <img src="https://via.placeholder.com/250" alt="">
             </div>
         </section>
+
+        <!-- Lower section -->
+        <section class="col-span-3 pb-10">
+            <div class="mx-auto" id="maps">
+                <h1 class="text-3xl text-center font-playfair font-semibold py-1">
+                    Where we are located
+                </h1>
+                <div class="divider content-divider flex-grow w-8 justify-center mx-auto"></div>
+                <div class="mt-4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1143.9320521875377!2d7.873280843694264!3d46.69193278749463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478fa35dc0e74ce5%3A0xd4036580847d7b65!2sKammistrasse%2C%203800%20Interlaken!5e0!3m2!1sde!2sch!4v1643491363407!5m2!1sde!2sch" width="50%" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="mx-auto"></iframe>
+                </div>
+            </div>    
+        </section>
+
+        <!-- Footer section -->
+        <footer class="text-center col-span-3 font-playfair relative text-sm">
+            <div class="flex justify-around mt-10 px-16 flex-col md:flex-row">
+                <div class="w-1/5 flex flex-col text-left items-start">
+                    <span class="font-semibold">Sitemap</span>
+                    <span class="mt-4">
+                        Home <br />
+                        Drinks <br />
+                        Gallery <br />
+                        Contact <br />
+                    </span>
+                </div>
+                <div class="w-1/5 flex flex-col text-left items-start">
+                    <span class="font-semibold">Address</span>
+                    <span class="mt-4">
+                        Fränkies Bar & Café <br />
+                        Kammistrasse 11 <br />
+                        3800 Interlaken <br />
+                    </span>
+                </div>
+                <div class="w-1/5">
+                    <div class="w-44">
+                        <img src="./img/frankies-logo.png" alt="">
+                    </div>
+                </div>
+                <div class="w-1/5 flex flex-col text-left items-start">
+                    <span class="font-semibold">Opening times</span>
+                    <span class="mt-4">
+                        Wed: 17.00 – 22.00 <br />
+                        Thu: 17.00 – 22.00 <br />
+                        Fri: 15.00 – 22.00 <br />
+                        Sat: 12.00 – 22.00 <br />
+                        Sun: 12.00 – 22.00
+                    </span>
+                </div>
+                <div class="w-1/5 flex flex-col text-left items-start">
+                    <span class="font-semibold">Social Media</span>
+                    <span class="mt-4">
+                        Instagram <br />
+                        Facebook
+                    </span>
+                </div>
+            </div>
+            <div class="absolute bottom-14 left-16">
+                Copyright © Fränkies Bar & Café 2022 - Website by Ceronio Justin
+            </div>
+        </footer>
     </div>
         
     <script src="./main.js"></script>
