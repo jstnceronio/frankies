@@ -623,6 +623,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: -0.75rem;
 }
 
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -665,6 +670,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.75rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .ml-auto {
   margin-left: auto;
 }
@@ -677,16 +686,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 2.5rem;
 }
 
-.mt-20 {
-  margin-top: 5rem;
-}
-
 .mb-\[-2rem\] {
   margin-bottom: -2rem;
 }
 
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.ml-20 {
+  margin-left: 5rem;
+}
+
+.ml-16 {
+  margin-left: 4rem;
+}
+
+.ml-32 {
+  margin-left: 8rem;
 }
 
 .block {
@@ -713,6 +730,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 12rem;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .h-screen {
   height: 100vh;
 }
@@ -723,10 +744,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-full {
   height: 100%;
-}
-
-.h-96 {
-  height: 24rem;
 }
 
 .w-screen {
@@ -781,6 +798,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 10rem;
 }
 
+.w-32 {
+  width: 8rem;
+}
+
+.w-52 {
+  width: 13rem;
+}
+
 .max-w-lg {
   max-width: 32rem;
 }
@@ -821,6 +846,14 @@ Ensure the default browser behavior of the `hidden` attribute.
           appearance: none;
 }
 
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -829,12 +862,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-template-rows: minmax(100px, auto) auto auto auto;
 }
 
-.grid-rows-\[minmax\(100px\2c _auto\)_800px_1fr_300px\] {
-  grid-template-rows: minmax(100px, auto) 800px 1fr 300px;
+.grid-rows-\[minmax\(100px\2c _auto\)_auto\] {
+  grid-template-rows: minmax(100px, auto) auto;
 }
 
-.grid-rows-\[minmax\(100px\2c _auto\)_1fr\] {
-  grid-template-rows: minmax(100px, auto) 1fr;
+.grid-rows-\[minmax\(100px\2c _auto\)_800px_1fr_300px\] {
+  grid-template-rows: minmax(100px, auto) 800px 1fr 300px;
 }
 
 .grid-rows-\[minmax\(100px\2c _auto\)_500px_1fr_100px\] {
@@ -885,12 +918,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 4rem;
 }
 
-.gap-12 {
-  gap: 3rem;
-}
-
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-12 {
+  gap: 3rem;
 }
 
 .overflow-x-hidden {
@@ -1104,11 +1137,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.underline {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-}
-
 .transition {
   transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -1125,11 +1153,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap");
 
 body {
   background-color: #151518 !important;
@@ -1151,7 +1179,7 @@ body {
   height: 2px;
   background: white;
   position: absolute;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .btn span:nth-child(1) {
@@ -1187,7 +1215,7 @@ body {
   bottom: 0;
   padding: 100px;
   z-index: 1;
-  transition: .3s;
+  transition: 0.3s;
   opacity: 0;
   visibility: hidden;
 }
@@ -1218,7 +1246,7 @@ body {
 }
 
 .menu-link:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -10px;
   left: 0;
@@ -1226,7 +1254,7 @@ body {
   height: 5px;
   display: inline-flex;
   background: #151518;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .menu-link:hover:after {
@@ -1242,103 +1270,104 @@ body {
   bottom: -50%;
   width: 200%;
   height: 200vh;
-  background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+  background: transparent
+    url("http://assets.iceable.com/img/noise-transparent.png") repeat 0 0;
   background-repeat: repeat;
-  -webkit-animation: bg-animation .2s infinite;
-          animation: bg-animation .2s infinite;
-  opacity: .9;
+  -webkit-animation: bg-animation 0.2s infinite;
+          animation: bg-animation 0.2s infinite;
+  opacity: 0.9;
   visibility: visible;
 }
 
 @-webkit-keyframes bg-animation {
   0% {
-    transform: translate(0,0)
+    transform: translate(0, 0);
   }
 
   10% {
-    transform: translate(-5%,-5%)
+    transform: translate(-5%, -5%);
   }
 
   20% {
-    transform: translate(-10%,5%)
+    transform: translate(-10%, 5%);
   }
 
   30% {
-    transform: translate(5%,-10%)
+    transform: translate(5%, -10%);
   }
 
   40% {
-    transform: translate(-5%,15%)
+    transform: translate(-5%, 15%);
   }
 
   50% {
-    transform: translate(-10%,5%)
+    transform: translate(-10%, 5%);
   }
 
   60% {
-    transform: translate(15%,0)
+    transform: translate(15%, 0);
   }
 
   70% {
-    transform: translate(0,10%)
+    transform: translate(0, 10%);
   }
 
   80% {
-    transform: translate(-15%,0)
+    transform: translate(-15%, 0);
   }
 
   90% {
-    transform: translate(10%,5%)
+    transform: translate(10%, 5%);
   }
 
   100% {
-    transform: translate(5%,0)
+    transform: translate(5%, 0);
   }
 }
 
 @keyframes bg-animation {
   0% {
-    transform: translate(0,0)
+    transform: translate(0, 0);
   }
 
   10% {
-    transform: translate(-5%,-5%)
+    transform: translate(-5%, -5%);
   }
 
   20% {
-    transform: translate(-10%,5%)
+    transform: translate(-10%, 5%);
   }
 
   30% {
-    transform: translate(5%,-10%)
+    transform: translate(5%, -10%);
   }
 
   40% {
-    transform: translate(-5%,15%)
+    transform: translate(-5%, 15%);
   }
 
   50% {
-    transform: translate(-10%,5%)
+    transform: translate(-10%, 5%);
   }
 
   60% {
-    transform: translate(15%,0)
+    transform: translate(15%, 0);
   }
 
   70% {
-    transform: translate(0,10%)
+    transform: translate(0, 10%);
   }
 
   80% {
-    transform: translate(-15%,0)
+    transform: translate(-15%, 0);
   }
 
   90% {
-    transform: translate(10%,5%)
+    transform: translate(10%, 5%);
   }
 
   100% {
-    transform: translate(5%,0)
+    transform: translate(5%, 0);
   }
 }
 
@@ -1361,11 +1390,11 @@ body {
   }
 }
 
-.slider{
+.slider {
   overflow: hidden;
 }
 
-.slides{
+.slides {
   width: 500%;
   height: 600px;
 }
@@ -1376,11 +1405,11 @@ body {
   }
 }
 
-.slides{
+.slides {
   display: flex;
 }
 
-.slides input{
+.slides input {
   display: none;
 }
 
@@ -1394,7 +1423,7 @@ body {
   }
 }
 
-.slide{
+.slide {
   transition: 2s;
 }
 
@@ -1415,7 +1444,7 @@ body {
 
 /*css for manual slide navigation*/
 
-.navigation-manual{
+.navigation-manual {
   position: absolute;
   width: 450px;
 }
@@ -1426,13 +1455,13 @@ body {
   }
 }
 
-.navigation-manual{
+.navigation-manual {
   margin-top: -40px;
   display: flex;
   justify-content: center;
 }
 
-.manual-btn{
+.manual-btn {
   border: 2px solid #151518;
   padding: 5px;
   border-radius: 10px;
@@ -1440,33 +1469,33 @@ body {
   transition: 1s;
 }
 
-.manual-btn:not(:last-child){
+.manual-btn:not(:last-child) {
   margin-right: 40px;
 }
 
-.manual-btn:hover{
+.manual-btn:hover {
   background: #151518;
 }
 
-#radio1:checked ~ .first{
+#radio1:checked ~ .first {
   margin-left: 0;
 }
 
-#radio2:checked ~ .first{
+#radio2:checked ~ .first {
   margin-left: -20%;
 }
 
-#radio3:checked ~ .first{
+#radio3:checked ~ .first {
   margin-left: -40%;
 }
 
-#radio4:checked ~ .first{
+#radio4:checked ~ .first {
   margin-left: -60%;
 }
 
 /*css for automatic navigation*/
 
-.navigation-auto{
+.navigation-auto {
   position: absolute;
   display: flex;
   margin-top: 560px;
@@ -1483,34 +1512,34 @@ body {
   }
 }
 
-.navigation-auto{
+.navigation-auto {
   justify-content: center;
 }
 
-.navigation-auto div{
+.navigation-auto div {
   border: 2px solid #151518;
   padding: 5px;
   border-radius: 10px;
   transition: 1s;
 }
 
-.navigation-auto div:not(:last-child){
+.navigation-auto div:not(:last-child) {
   margin-right: 40px;
 }
 
-#radio1:checked ~ .navigation-auto .auto-btn1{
+#radio1:checked ~ .navigation-auto .auto-btn1 {
   background: #151518;
 }
 
-#radio2:checked ~ .navigation-auto .auto-btn2{
+#radio2:checked ~ .navigation-auto .auto-btn2 {
   background: #151518;
 }
 
-#radio3:checked ~ .navigation-auto .auto-btn3{
+#radio3:checked ~ .navigation-auto .auto-btn3 {
   background: #151518;
 }
 
-#radio4:checked ~ .navigation-auto .auto-btn4{
+#radio4:checked ~ .navigation-auto .auto-btn4 {
   background: #151518;
 }
 
