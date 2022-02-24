@@ -593,6 +593,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   bottom: 0px;
 }
 
+.left-32 {
+  left: 8rem;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -706,6 +710,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 8rem;
 }
 
+.mt-40 {
+  margin-top: 10rem;
+}
+
+.-ml-1 {
+  margin-left: -0.25rem;
+}
+
 .block {
   display: block;
 }
@@ -744,6 +756,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-full {
   height: 100%;
+}
+
+.min-h-\[850px\] {
+  min-height: 850px;
 }
 
 .w-screen {
@@ -810,6 +826,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 32rem;
 }
 
+.max-w-fit {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.max-w-full {
+  max-width: 100%;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -874,6 +900,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-template-rows: minmax(100px, auto) 500px 1fr 100px;
 }
 
+.grid-rows-\[minmax\(100px\2c _auto\)_auto_auto_auto_auto\] {
+  grid-template-rows: minmax(100px, auto) auto auto auto auto;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -924,6 +954,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .gap-12 {
   gap: 3rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .overflow-x-hidden {
@@ -1030,8 +1064,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1.5rem;
 }
 
+.px-32 {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
 }
 
 .text-left {
@@ -1116,6 +1163,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .leading-none {
   line-height: 1;
+}
+
+.leading-relaxed {
+  line-height: 1.625;
 }
 
 .tracking-wide {
@@ -1637,8 +1688,16 @@ body {
     width: 50%;
   }
 
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:items-start {
+    align-items: flex-start;
   }
 
   .md\:items-center {
@@ -1647,6 +1706,10 @@ body {
 
   .md\:justify-start {
     justify-content: flex-start;
+  }
+
+  .md\:justify-around {
+    justify-content: space-around;
   }
 
   .md\:gap-64 {
@@ -1753,6 +1816,14 @@ body {
 
   .xl\:block {
     display: block;
+  }
+
+  .xl\:min-h-\[400px\] {
+    min-height: 400px;
+  }
+
+  .xl\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .xl\:pl-40 {
