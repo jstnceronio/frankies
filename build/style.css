@@ -601,12 +601,36 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 10;
 }
 
+.order-1 {
+  order: 1;
+}
+
+.order-2 {
+  order: 2;
+}
+
+.order-first {
+  order: -9999;
+}
+
+.order-4 {
+  order: 4;
+}
+
+.order-5 {
+  order: 5;
+}
+
 .col-span-3 {
   grid-column: span 3 / span 3;
 }
 
 .col-span-2 {
   grid-column: span 2 / span 2;
+}
+
+.col-span-full {
+  grid-column: 1 / -1;
 }
 
 .row-start-1 {
@@ -762,6 +786,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   min-height: 850px;
 }
 
+.min-h-\[900px\] {
+  min-height: 900px;
+}
+
 .w-screen {
   width: 100vw;
 }
@@ -834,6 +862,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-\[200px\] {
+  max-width: 200px;
 }
 
 .flex-1 {
@@ -1067,6 +1099,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-32 {
   padding-left: 8rem;
   padding-right: 8rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .pb-10 {
@@ -1672,6 +1709,10 @@ body {
     display: none;
   }
 
+  .md\:min-h-\[400px\] {
+    min-height: 400px;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -1690,6 +1731,10 @@ body {
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .md\:flex-row {
@@ -1744,6 +1789,14 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .lg\:order-3 {
+    order: 3;
+  }
+
+  .lg\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
   .lg\:mt-60 {
     margin-top: 15rem;
   }
@@ -1770,6 +1823,10 @@ body {
 
   .lg\:w-5\/12 {
     width: 41.666667%;
+  }
+
+  .lg\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .lg\:px-16 {
