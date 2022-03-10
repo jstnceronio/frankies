@@ -13,7 +13,7 @@
     <!-- Background noise -->
     <div class="bg"></div>
     <!-- Page wrapepr -->
-    <div class="wrapper grid grid-rows-[minmax(100px,_auto)_800px_1fr_300px] w-screen font-LuxuriousRoman text-white">
+    <div class="wrapper grid grid-rows-[minmax(100px,_auto)_1100px_auto_auto_auto_300px] w-screen font-LuxuriousRoman text-white">
         <!-- Header section -->
         <header class="nav row-start-1 row-end-1 col-span-3 p-1 px-4 lg:px-16">
             <!-- Navigation menu -->
@@ -27,14 +27,15 @@
                         <a class="hover:border-b-2" href="./contact.html">Contact</a>
                     </li>
                     <!-- Center -->
-                    <li class="text-3xl lg:text-5xl w-2/4 text-center">                        
-                        <a href="./frankies.html">Fränkies Bar & Café</a>
+                    <li class="text-3xl lg:text-5xl w-2/4 items-center flex justify-center ">                        
+                        <a href="./frankies.html">Fränkies Bar & Café</a> 
+                        <!-- <img src="./img/frankies-logo.png" alt="" width="150px"> -->
                     </li>
                     <!-- Right -->
                     <li class="mt-4 flex justify-between w-1/4 gap-10">
+                        <i></i>
                         <i class="fab fa-instagram text-xl mt-1"></i>
                         <i class="fab fa-facebook text-xl mt-1"></i>
-                        <a class="hover:underline" href="./layout.html">en</a>
                     </li>
                 </ul>
             </nav>
@@ -47,52 +48,54 @@
             <div class="menu">
                 <ul class="menu-list">
                     <li class="menu-item">
-                        <a href="#" class="menu-link">Home</a>
+                        <a href="./frankies.html" class="menu-link">Home</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#" class="menu-link">Drinks</a>
+                        <a href="./drinks.html" class="menu-link">Drinks</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#" class="menu-link">Gallery</a>
+                        <a href="./events.html" class="menu-link">Gallery</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#" class="menu-link">Contact</a>
+                        <a href="./contact.html" class="menu-link">Contact</a>
                     </li>
                 </ul>
             </div>
-
             <div class="lg:hidden p-8 text-2xl  font-playfair">
                 <div class="flex flex-1 justify-between">
                     <div></div>
-                    <a href="./layout.html">Fränkies Bar & Café</a>
+                    <a href="./frankies.html">Fränkies Bar & Café</a>
                     <div></div>
                 </div>
+                <!-- 
                 <div class="mobile-menu mt-4 hidden lg:hidden ">
                     <ul class="text-sm">
-                        <li class="p-2 hover:bg-gray-200"><a href="./layout.html">Home</a></li>
-                        <li class="p-2 hover:bg-gray-200"><a href="./layout.html">Drinks</a></li>
+                        <li class="p-2 hover:bg-gray-200"><a href="./frankies.html">She</a></li>
+                        <li class="p-2 hover:bg-gray-200"><a href="./drinks.html">Drinks</a></li>
                         <li class="p-2 hover:bg-gray-200"><a href="./layout.html">Gallery</a></li>
                         <li class="p-2 hover:bg-gray-200"><a href="./layout.html">Contact</a></li>
                     </ul>
                 </div>
+                -->
             </div>
         </header>
 
         <!-- Hero section --> 
-        <section class="h-screen col-span-3 flex flex-col md:flex-row relative mt-8">
-            <!-- Text section --> 
-            <div class="md:w-3/5 h-2/4 md:my-12 lg:text-center p-10 md:p-4 ">
-                <div class="lg:w-3/4 md:text-center md:w-1/2 font-ultra tracking-wide leading-tight md:absolute text-center left-0 right-0 font-bold w-full ml-auto mr-auto uppercase 
-                text-5xl md:text-7xl lg:text-8xl xl:text-[8rem]">
-                    Outstanding drinks, great tunes & a special atmosphere
+        <section class="col-span-3 flex flex-col md:flex-row relative mt-8">
+            <!-- Text section Outstanding drinks, great tunes & a special atmosphere--> 
+            <div class="md:w-3/5 h-1/4 md:mt-12 lg:text-center p-10 md:p-4 ">
+                <div class="lg:w-3/4 md:text-center font-ultra tracking-wide md:absolute text-center left-0 right-0 font-bold w-full ml-auto mr-auto uppercase 
+                text-7xl md:text-[7.5rem] lg:text-[11rem] leading-[1]">
+                    Welcome to Frankies <br /> Bar & Café
                 </div>
-
-                <div class="absolute bottom-56 left-16 border-b-2 hover:border-b-slate-600">
+                <!-- 
+                <div class="absolute bottom-0 left-16 border-b-2 hover:border-b-slate-600">
                     <a href="#maps">Scroll down</a>
                 </div>
+                -->
             </div>
             <!-- Image section --> 
-            <div class="hidden md:block mt-8">
+            <div class="mt-8 mx-auto">
                 <!--image slider start-->
                 <div class="slider">
                     <div class="slides">
@@ -104,7 +107,7 @@
                     <!--radio buttons end-->
                     <!--slide images start-->
                     <div class="slide first">
-                        <img src="./img/placeholder.png" alt="placeholder">
+                        <img src="https://via.placeholder.com/720" alt="placeholder">
                     </div>
                     <div class="slide">
                         <img src="https://via.placeholder.com/720" alt="placeholder">
@@ -136,24 +139,85 @@
                 </div>
                 <!--image slider end-->
             </div>
+            <!-- 
             <div class="md:hidden mx-auto">
                 <img src="https://via.placeholder.com/250" alt="">
             </div>
+            -->
         </section>
 
-        <!-- Lower section -->
-        <section class="col-span-3 pb-10">
-            <div class="mx-auto" id="maps">
-                <h1 class="text-3xl text-center font-playfair font-semibold py-1">
-                    Where we are located
-                </h1>
-                <div class="divider content-divider flex-grow w-8 justify-center mx-auto"></div>
-                <div class="mt-4">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1143.9320521875377!2d7.873280843694264!3d46.69193278749463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478fa35dc0e74ce5%3A0xd4036580847d7b65!2sKammistrasse%2C%203800%20Interlaken!5e0!3m2!1sde!2sch!4v1643491363407!5m2!1sde!2sch" width="50%" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="mx-auto"></iframe>
+        <section class="col-span-3 relative px-32 w-full font-playfair 2xl:w-2/3 2xl:mx-auto">
+            <div class="text-5xl md:text-7xl text-center uppercase font-bold -ml-1 w-full">
+                How you can get to Fränkies Bar & Café?
+            </div>
+            <div class="grid gap-8 md:grid-cols-2 mt-16">
+                <div class="leading-relaxed max-w-lg">
+                    <p class="text-xl font-bold pb-8">
+                        Our location
+                    </p>
+                    <p class="max-w-96 pb-8">
+                        Fill in the form below and we will get back to you as soon as we can. You can also call us anytime at 
+                        <span class="font-bold">079 753 57 61</span> or send an email <span class="font-bold">to info@fraenkies.ch</span>
+                    </p>
+                    <div class="border-b-2 hover:border-b-slate-600 text-lg max-w-fit">
+                        <a href="./contact.html">More about our location</a>
+                    </div>
                 </div>
-            </div>    
+                <div class="max-w-full h-auto">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1143.9320521875377!2d7.873280843694264!3d46.69193278749463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478fa35dc0e74ce5%3A0xd4036580847d7b65!2sKammistrasse%2C%203800%20Interlaken!5e0!3m2!1sde!2sch!4v1643491363407!5m2!1sde!2sch" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="mx-auto"></iframe>
+                </div>
+            </div>
         </section>
 
+        <section class="col-span-3 relative px-32 w-full mt-16 font-playfair 2xl:w-2/3 2xl:mx-auto 2xl:mt-32">
+            <div class="text-5xl md:text-7xl text-center uppercase font-bold -ml-1 w-full">
+                About Fränkies
+            </div>
+            <div class="grid gap-8 md:grid-cols-2 mt-16">
+                <div class="max-w-full h-auto">
+                    <img src="https://via.placeholder.com/800" alt="">
+                </div>
+                <div class="leading-relaxed max-w-lg">
+                    <p class="text-xl font-bold pb-8">
+                        Something about us
+                    </p>
+                    <p class="max-w-96 pb-8">
+                        Fill in the form below and we will get back to you as soon as we can. You can also call us anytime at 
+                        <span class="font-bold">079 753 57 61</span> or send an email <span class="font-bold">to info@fraenkies.ch</span>
+                    </p>
+                    <p class="text-xl font-bold pb-8">
+                        Our bar
+                    </p>
+                    <p class="max-w-96 pb-8">
+                        Fill in the form below and we will get back to you as soon as we can. You can also call us anytime at 
+                        <span class="font-bold">079 753 57 61</span> or send an email <span class="font-bold">to info@fraenkies.ch</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="col-span-3 relative px-32 w-full mt-16 font-playfair 2xl:w-2/3 2xl:mx-auto 2xl:mt-32">
+            <div class="text-5xl md:text-7xl text-center uppercase font-bold -ml-1 w-full">
+                What's happening at Fränkies?
+            </div>
+            <div class="grid gap-8 md:grid-cols-2 mt-16">
+                <div class="first leading-relaxed max-w-lg">
+                    <p class="text-xl font-bold pb-8">
+                        Check out our events
+                    </p>
+                    <p class="max-w-96 pb-8">
+                        Fill in the form below and we will get back to you as soon as we can. You can also call us anytime at 
+                        <span class="font-bold">079 753 57 61</span> or send an email <span class="font-bold">to info@fraenkies.ch</span>
+                    </p>
+                    <div class="border-b-2 hover:border-b-slate-600 text-lg max-w-fit">
+                        <a href="./events.html">More about our events</a>
+                    </div>
+                </div>
+                <div class="max-w-full h-auto">
+                    <img src="https://via.placeholder.com/800" alt="">
+                </div>
+            </div>
+        </section>
         <!-- Footer section -->
         <footer class="text-center col-span-3 font-playfair relative text-md mt-32 md:min-h-[400px] min-h-[900px]">
             <div class="grid gap-8 md:grid-cols-4 lg:grid-cols-5 mt-10 px-32">
