@@ -4,11 +4,19 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;400;500;600;700&display=swap');
 
 body {
   background-color: #151518 !important;
   overflow-x: hidden;
+}
+
+* {
+  font-family: 'Radio Canada', sans-serif;
+}
+
+.header {
+  font-family: 'Playfair Display', serif;
 }
 
 .btn {

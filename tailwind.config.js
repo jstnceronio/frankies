@@ -6,7 +6,7 @@ module.exports = {
       LuxuriousRoman: ["'Luxurious Roman', cursive"],
       ultra: ["'Ultra', serif"],
       playfair: ["'Playfair Display', serif"],
-      rowdies: ["'Rowdies', cursive"],
+      canada: ["'Radio Canada', sans-serif"]
     },
     container: {
       center: true,
