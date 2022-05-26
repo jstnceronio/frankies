@@ -191,6 +191,7 @@ body {
 }
 .slider {
   @apply w-[450px] h-[600px] xl:w-[720px] xl:h-[700px];
+  margin: auto;
   overflow: hidden;
 }
 
