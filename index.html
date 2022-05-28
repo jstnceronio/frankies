@@ -1,46 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Frankies</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/shared/favicon.png">
     <link rel="stylesheet" href="./build/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Frankies Bar & Café</title>
 </head>
-<body class="bg-frankies-beige font-LuxuriousRoman w-screen">
-    <!-- Header -->
-    <header>
-        <nav class="flex items-center">
-            <ul class="hidden sm:flex flex-1 items-center justify-center gap-12 uppercase text-xs md:mt-8">
-                <li class="curser-pointer">Home</li>
-                <li class="curser-pointer">Drinks & Cocktails</li>
-                <li class="text-xl sm:text-2xl">Frankies Bar & Café</li>
-                <li class="curser-pointer">Gallery</li>
-                <li class="curser-pointer">Contact</li>
-            </ul>
-            <div class="flex sm:hidden flex-1 justify-end">
-                <i class="text-2xl fas fa-bars"></i>
+<body>
+    <!-- Background noise -->
+    <div class="bg"></div>
+    <!-- Page wrapepr -->
+    <div class="wrapper grid grid-rows-[minmax(100px,_auto)_1000px_auto_auto_auto_300px] w-screen font-LuxuriousRoman text-white">
+        <!-- Header section -->
+        <header class="nav row-start-1 row-end-1 col-span-3 p-1 px-4 lg:px-16">
+            <!-- Navigation menu -->
+            <nav class="font-playfair">
+                <ul class="hidden lg:flex justify-around mt-8">
+                    <!-- Left -->
+                    <li class="mt-10 flex justify-between w-1/4 h-fit">
+                        <a class="border-b-2" href="./index.html">Home</a>
+                        <a class="hover:border-b-2" href="./drinks.html">Drinks</a>
+                        <a class="hover:border-b-2" href="./events.html">Gallery</a>
+                        <a class="hover:border-b-2" href="./contact.html">Contact</a>
+                    </li>
+                    <!-- Center -->
+                    <a href="./index.html">
+                        <img src="./img/shared/frankies-logo-white.png" alt="" width="150px"> 
+                    </a> 
+                    <!-- Right -->
+                    <li class="mt-4 flex justify-between w-1/4 gap-10">
+                        <i></i>
+                        <i class="fab fa-instagram text-xl mt-1"></i>
+                        <i class="fab fa-facebook text-xl mt-1"></i>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Mobile menu -->
+            <a href="" class="btn lg:hidden">
+                <span></span>
+                <span></span>
+            </a>
+    
+            <div class="menu">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <a href="./index.html" class="menu-link">Home</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="./drinks.html" class="menu-link">Drinks</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="./events.html" class="menu-link">Gallery</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="./contact.html" class="menu-link">Contact</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </header>
-    
-    <!-- Hero -->
-    <section class="relative grid grid-cols-3 gap-4 mt-16 bg-blue-100">
-        <div class="text-3xl md:text-7xl lg:text-7xl justify-right lg:text-left mb-6 col-span-2 mx-auto">
-            Outstanding drinks,  <br /> great tunes & a special <br /> atmosphere
-        </div>
-        <div class="bg-red-300 w-96">
-            <img src="./img/cocktails.png" alt="">
-        </div>
-    </section>
+            <div class="lg:hidden p-8 text-2xl  font-playfair">
+                <div class="flex flex-1 justify-between">
+                    <div></div>
+                    <a href="./index.html">
+                        <img src="./img/shared/frankies-logo-white.png" alt="" width="150px"> 
+                    </a>
+                    <div></div>
+                </div>
+            </div>
+        </header>
 
-    <!-- Next section -->
-    <section class="py-20 mt-20 lg:mt-60 bg-lime-300">
-        <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
-            <h1 class="text-3xl text-center">Features</h1>
-            <p class="text-center text-bookmark-grey mt-4">
-                Friday Rodeo Night
-            </p>
-        </div>
-    </section>
-    
+        <!-- Hero section --> 
+        <section class="col-span-3 flex flex-col md:flex-row relative mt-8">
+            <!-- Text section Outstanding drinks, great tunes & a special atmosphere--> 
+            <div class="md:w-3/5 h-1/4 md:mt-12 lg:text-center md:p-10">
+                <div class="header lg:w-3/4 md:text-center font-ultra tracking-wide md:absolute text-center left-0 right-0 font-bold w-full ml-auto mr-auto uppercase 
+                text-7xl md:text-[7.5rem] lg:text-[10rem] leading-[1]">
+                    Welcome to Frankies <br /> Bar & Café
+                </div>
+            </div>
+            <!-- Image section --> 
+            <div class="mt-8 mx-auto">
+                <!--image slider start-->
+                <div class="slider">
+                    <div class="slides">
+                    <!--radio buttons start-->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <!--radio buttons end-->
+                    <!--slide images start-->
+                    <div class="slide first">
+                        <img src="./img/homepage/frank.jpg" alt="placeholder" class="object-cover">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/homepage/DSCF0095.JPG" alt="placeholder" class="object-cover">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/homepage/DSCF0197.JPG" alt="placeholder" class="object-cover">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/homepage/DSCF0075.JPG" alt="placeholder" class="object-cover">
+                    </div>
+                    <!--slide images end-->
+                    <!--automatic navigation start-->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                    <!--automatic navigation end-->
+                    </div>
+                    <!--manual navigation start-->
+                    <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                    </div>
+                    <!--manual navigation end-->
+                </div>
+                <!--image slider end-->
+            </div>
+            <!-- 
+            <div class="md:hidden mx-auto">
+                <img src="https://via.placeholder.com/250" alt="">
+            </div>
+            -->
+        </section>
+
+        <section class="col-span-3 relative px-32 w-full font-playfair 2xl:w-2/3 2xl:mx-auto">
+            <div class="header text-5xl md:text-7xl text-center uppercase font-bold -ml-1 w-full">
+                How can you get to <br /> Frankies Bar & Café?
+            </div>
+            <div class="grid gap-8 md:grid-cols-2 mt-16">
+                <div class="leading-relaxed max-w-lg">
+                    <p class="header text-xl font-bold pb-8">
+                        Our location
+                    </p>
+                    <p class="font-canada max-w-96 pb-8">
+                        Fill in the form below and we will get back to you as soon as we can. You can also call us anytime at 
+                        <span class="font-bold">079 753 57 61</span> or send an email <span class="font-bold">to info@fraenkies.ch</span>
+                    </p>
+                    <div class="font-canada border-b-2 hover:border-b-slate-600 text-lg max-w-fit">
+                        <a href="./contact.html">More about our location</a>
+                    </div>
+                </div>
+                <div class="max-w-full h-auto">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2736.6971434022657!2d7.872396815599003!3d46.691978079134664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478fa37ac111b06b%3A0x133938b9de587beb!2sFrankies%20Bar%20%26%20Caf%C3%A9!5e0!3m2!1sde!2sch!4v1652207102895!5m2!1sde!2sch" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="mx-auto"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="col-span-3 relative px-32 w-full mt-16 font-playfair 2xl:w-2/3 2xl:mx-auto 2xl:mt-32">
+            <div class="header text-5xl md:text-7xl text-center uppercase font-bold -ml-1 w-full">
+                About Frankies
+            </div>
+            <div class="grid gap-8 md:grid-cols-2 mt-16">
+                <div class="max-w-full h-auto">
+                    <img src="https://via.placeholder.com/800" alt="">
+                </div>
+                <div class="leading-relaxed max-w-lg">
+                    <p class="header text-xl font-bold pb-8">
+                        Something about us
+                    </p>
+                    <p class="max-w-96 pb-8">
+                        Fill in the form below and we will get back to you as soon as we can. You can also call us anytime at 
+                        <span class="font-bold">079 753 57 61</span> or send an email <span class="font-bold">to info@fraenkies.ch</span>
+                    </p>
+                    <p class="header text-xl font-bold pb-8">
+                        Our bar
+                    </p>
+                    <p class="max-w-96 pb-8">
+                        Fill in the form below and we will get back to you as soon as we can. You can also call us anytime at 
+                        <span class="font-bold">079 753 57 61</span> or send an email <span class="font-bold">to info@fraenkies.ch</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="col-span-3 relative px-32 w-full mt-16 font-playfair 2xl:w-2/3 2xl:mx-auto 2xl:mt-32">
+            <div class="header text-5xl md:text-7xl text-center uppercase font-bold -ml-1 w-full">
+                What's happening at Frankies?
+            </div>
+            <div class="grid gap-8 md:grid-cols-2 mt-16">
+                <div class="first leading-relaxed max-w-lg">
+                    <p class="header text-xl font-bold pb-8">
+                        Check out our events
+                    </p>
+                    <p class="max-w-96 pb-8">
+                        Fill in the form below and we will get back to you as soon as we can. You can also call us anytime at 
+                        <span class="font-bold">079 753 57 61</span> or send an email <span class="font-bold">to info@fraenkies.ch</span>
+                    </p>
+                    <div class="border-b-2 hover:border-b-slate-600 text-lg max-w-fit">
+                        <a href="./events.html">More about our events</a>
+                    </div>
+                </div>
+                <div class="max-w-full h-auto">
+                    <img src="https://via.placeholder.com/800" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- Footer section -->
+        <footer class="text-center col-span-3 font-playfair relative text-md mt-32 md:min-h-[400px] min-h-[900px]">
+            <div class="grid gap-8 md:grid-cols-4 lg:grid-cols-5 mt-10 px-32">
+                <div class="flex flex-col text-center items-center order-1">
+                    <span class="font-semibold">Sitemap</span>
+                    <span class="mt-4">
+                        Home <br />
+                        Drinks <br />
+                        Gallery <br />
+                        Contact <br />
+                    </span>
+                </div>
+                <div class="flex flex-col text-center items-center order-2">
+                    <span class="font-semibold">Address</span>
+                    <span class="mt-4">
+                        Frankies Bar & Café <br />
+                        Kammistrasse 11 <br />
+                        3800 Interlaken <br />
+                    </span>
+                </div>
+                <div class="order-first col-span-full lg:col-span-1 lg:order-3 mx-auto">
+                    <div class="max-w-[200px]">
+                        <img src="./img/shared/frankies-logo.png" alt="">
+                    </div>
+                </div>
+                <div class="flex flex-col text-center items-center order-4">
+                    <span class="font-semibold">Opening times</span>
+                    <span class="mt-4">
+                        Wed: 17.00 – 22.00 <br />
+                        Thu: 17.00 – 22.00 <br />
+                        Fri: 15.00 – 22.00 <br />
+                        Sat: 12.00 – 22.00 <br />
+                        Sun: 12.00 – 22.00
+                    </span>
+                </div>
+                <div class="flex flex-col text-center items-center order-5">
+                    <span class="font-semibold">Social Media</span>
+                    <span class="mt-4">
+                        Instagram <br />
+                        Facebook
+                    </span>
+                </div>
+            </div>
+            <div class="text-center py-16">
+                Copyright © Frankies Bar & Café 2022 - Website by Ceronio Justin
+            </div>
+        </footer>
+    </div>
+        
+    <script src="./main.js"></script>
 </body>
 </html>
