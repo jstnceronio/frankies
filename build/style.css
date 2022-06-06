@@ -474,6 +474,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: auto;
 }
 
+@media (min-width: 320px) {
+  .container {
+    max-width: 320px;
+  }
+}
+
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
@@ -552,10 +558,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-row-end: 1;
 }
 
-.m-0 {
-  margin: 0px;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -569,6 +571,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .mt-8 {
@@ -631,6 +638,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 15rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .block {
   display: block;
 }
@@ -673,10 +684,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100vh;
 }
 
-.h-full {
-  height: 100%;
-}
-
 .min-h-\[900px\] {
   min-height: 900px;
 }
@@ -707,26 +714,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 50%;
 }
 
-.w-16 {
-  width: 4rem;
-}
-
-.w-\[50\%\] {
-  width: 50%;
-}
-
-.w-32 {
-  width: 8rem;
-}
-
-.w-auto {
-  width: auto;
-}
-
-.min-w-full {
-  min-width: 100%;
-}
-
 .max-w-fit {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
@@ -743,18 +730,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-\[200px\] {
   max-width: 200px;
-}
-
-.max-w-sm {
-  max-width: 24rem;
-}
-
-.max-w-screen-md {
-  max-width: 768px;
-}
-
-.max-w-screen-sm {
-  max-width: 640px;
 }
 
 .flex-1 {
@@ -799,14 +774,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-template-rows: minmax(100px, auto) 800px 1fr 300px;
 }
 
-.grid-rows-\[minmax\(50px\2c _auto\)_auto_auto_auto_auto\] {
-  grid-template-rows: minmax(50px, auto) auto auto auto auto;
-}
-
-.grid-rows-\[minmax\(50px\)_auto_auto_auto_auto\] {
-  grid-template-rows: minmax(50px) auto auto auto auto;
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -841,10 +808,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .gap-4 {
   gap: 1rem;
-}
-
-.overflow-x-hidden {
-  overflow-x: hidden;
 }
 
 .border {
@@ -1043,21 +1006,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
-}
-
-.text-blue-300 {
-  --tw-text-opacity: 1;
-  color: rgb(147 197 253 / var(--tw-text-opacity));
-}
-
-.text-green-300 {
-  --tw-text-opacity: 1;
-  color: rgb(134 239 172 / var(--tw-text-opacity));
-}
-
-.text-blue-400 {
-  --tw-text-opacity: 1;
-  color: rgb(96 165 250 / var(--tw-text-opacity));
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
@@ -1292,7 +1240,13 @@ body {
 
 .slider {
   height: 600px;
-  width: 450px;
+  width: 350px;
+}
+
+@media (min-width: 640px) {
+  .slider {
+    width: 450px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -1330,7 +1284,13 @@ body {
 }
 
 .slide {
-  width: 450px;
+  width: 350px;
+}
+
+@media (min-width: 640px) {
+  .slide {
+    width: 450px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -1345,7 +1305,13 @@ body {
 
 .slide img {
   height: 600px;
-  width: 450px;
+  width: 350px;
+}
+
+@media (min-width: 640px) {
+  .slide img {
+    width: 450px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -1362,7 +1328,13 @@ body {
 
 .navigation-manual {
   position: absolute;
-  width: 450px;
+  width: 350px;
+}
+
+@media (min-width: 640px) {
+  .navigation-manual {
+    width: 450px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -1415,7 +1387,13 @@ body {
   position: absolute;
   display: flex;
   margin-top: 560px;
-  width: 450px;
+  width: 350px;
+}
+
+@media (min-width: 640px) {
+  .navigation-auto {
+    width: 450px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -1476,6 +1454,13 @@ body {
 .hover\:underline:hover {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
+}
+
+@media (min-width: 640px) {
+  .sm\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
 }
 
 @media (min-width: 768px) {
