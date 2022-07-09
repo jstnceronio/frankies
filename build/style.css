@@ -757,24 +757,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-template-rows: minmax(100px, auto) auto auto;
 }
 
-.grid-rows-\[minmax\(100px\2c _auto\)_1000px_auto_auto_auto_300px\] {
-  grid-template-rows: minmax(100px, auto) 1000px auto auto auto 300px;
+.grid-rows-\[minmax\(100px\2c _auto\)_910px_auto_auto_auto_300px\] {
+  grid-template-rows: minmax(100px, auto) 910px auto auto auto 300px;
 }
 
 .grid-rows-\[minmax\(100px\2c _auto\)_800px_1fr_300px\] {
   grid-template-rows: minmax(100px, auto) 800px 1fr 300px;
-}
-
-.grid-rows-\[minmax\(100px\2c _auto\)_900px_auto_auto_auto_300px\] {
-  grid-template-rows: minmax(100px, auto) 900px auto auto auto 300px;
-}
-
-.grid-rows-\[minmax\(100px\2c _auto\)_800px_auto_auto_auto_300px\] {
-  grid-template-rows: minmax(100px, auto) 800px auto auto auto 300px;
-}
-
-.grid-rows-\[minmax\(100px\2c _auto\)_910px_auto_auto_auto_300px\] {
-  grid-template-rows: minmax(100px, auto) 910px auto auto auto 300px;
 }
 
 .flex-col {
@@ -1009,6 +997,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.underline {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
@@ -1493,10 +1486,6 @@ body {
     display: flex;
   }
 
-  .md\:hidden {
-    display: none;
-  }
-
   .md\:min-h-\[400px\] {
     min-height: 400px;
   }
@@ -1599,20 +1588,12 @@ body {
     margin-right: auto;
   }
 
-  .\32xl\:mt-32 {
-    margin-top: 8rem;
-  }
-
-  .\32xl\:mt-24 {
-    margin-top: 6rem;
-  }
-
-  .\32xl\:mt-16 {
-    margin-top: 4rem;
-  }
-
   .\32xl\:mt-0 {
     margin-top: 0px;
+  }
+
+  .\32xl\:mt-32 {
+    margin-top: 8rem;
   }
 
   .\32xl\:w-2\/3 {
