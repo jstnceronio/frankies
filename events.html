@@ -7,333 +7,44 @@
     <link rel="icon" href="./img/shared/favicon.png">
     <link rel="stylesheet" href="./build/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <title>Events</title>
 </head>
 <body>
     <!-- Background noise -->
     <div class="bg"></div>
-    <!-- Page wrapepr -->
-    <div class="wrapper grid grid-rows-[minmax(100px,_auto)_auto_auto] w-screen font-LuxuriousRoman text-white">
-    <!-- Header section -->
-    <header class="nav row-start-1 row-end-1 col-span-3 p-1 px-4 lg:px-16">
-        <!-- Navigation menu -->
-        <nav class="font-playfair">
-            <ul class="hidden lg:flex justify-around mt-8">
-                <!-- Left -->
-                <li class="mt-10 flex justify-between w-1/4 h-fit">
-                    <a class="hover:border-b-2" href="./index.html">Home</a>
-                    <!-- <a class="hover:border-b-2" href="./drinks.html">Drinks</a> -->
-                    <a class="border-b-2" href="./events.html">Events</a>
-                    <a class="hover:border-b-2" href="./contact.html">Contact</a>
-                </li>
-                <!-- Center -->
-                <a href="./index.html">
-                    <img src="./img/shared/frankies-logo-white.png" alt="" width="150px"> 
-                </a> 
-                <!-- Right -->
-                <li class="flex justify-between w-1/4 h-fit mt-10">
-                    <i></i>
-                    <i class="fab fa-instagram text-xl"></i>
-                    <i class="fab fa-facebook text-xl"></i>
-                </li>
-            </ul>
-        </nav>
-        <!-- Mobile menu -->
-        <a href="" class="btn lg:hidden mt-8">
-            <span></span>
-            <span></span>
-        </a>
 
-        <div class="menu">
-            <ul class="menu-list">
-                <li class="menu-item">
-                    <a href="./index.html" class="menu-link">Home</a>
-                </li>
-                <!-- 
-                <li class="menu-item">
-                    <a href="./drinks.html" class="menu-link">Drinks</a>
-                </li>-->
-                <li class="menu-item">
-                    <a href="./events.html" class="menu-link">Events</a>
-                </li>
-                <li class="menu-item">
-                    <a href="./contact.html" class="menu-link">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <div class="lg:hidden p-8 text-2xl  font-playfair">
-            <div class="flex flex-1 justify-between">
-                <div></div>
-                <a href="./index.html">
-                    <img src="./img/shared/frankies-logo-white.png" alt="" width="150px"> 
-                </a>
-                <div></div>
-            </div>
-        </div>
-    </header>
+    <!-- Page wrapper -->
+    <div class="wrapper grid grid-rows-[minmax(100px,_auto)_auto_auto] w-screen font-LuxuriousRoman text-white" id="app">
+        <!-- Header section -->
+        <frankies-header page="events"></frankies-header>
 
-    <!-- Hero section --> 
-    <section class="col-span-3 md:flex-row relative mt-8 w-full">
-        <!-- Text section -->
-        <div class="px-16 uppercase font-playfair font-bold leading-[1] text-center">
-            <div class="header text-6xl md:text-[7.5rem] lg:text-[10rem] tracking-wide">
-                Take part in one of our events
-            </div>
-        </div> 
-    </section>
+        <!-- Hero section --> 
+        <event-hero></event-hero>
 
-    <!-- Upcoming events section --> 
-    <section class="col-span-3 relative px-4 sm:px-32 mt-32 w-full font-playfair">
-        <div class="header text-5xl md:text-7xl text-center uppercase font-bold -ml-1 w-full mt-16 ">
-            Upcoming events
-        </div>
+        <!-- Upcoming events section --> 
+        <event-list></event-list>
 
-        <div class="grid gap-8 md:grid-cols-2 xl:grid-cols-4 mt-16">
-        <!-- 
-            <div class="max-w-full h-auto">
-                <div class="">
-                    <img src="./img/events/francois.jpg" alt="" class="w-22">
-                </div>
-                <p class="text-xl font-bold pt-4 pb-2 ">
-                    Francois "One Man Band" (Cape Towns Premier Solo Performer)
-                </p>
-                <p class="text-lg font-semibold text-gray-400">
-                    August 17 @ 20:00
-                </p>
-                <p class="pt-2">
-                    Soul, Blues, Funk and much more
-                </p>
-            </div>
-
-            <div class="max-w-full h-auto">
-                <div class="">
-                    <img src="./img/opening.JPG" alt="" class="w-22">
-                </div>
-                <p class="text-xl font-bold pt-4 pb-2 ">
-                    Rock n Roll evening with DJane Shorty
-                </p>
-                <p class="text-lg font-semibold text-gray-400">
-                    August 20 @ 17:00
-                </p>
-                <p class="pt-2">
-                    Rock n Roll, Rockabilly and Electro Swing
-                </p>
-            </div>
-
-            <div class="max-w-full h-auto">
-                <div class="">
-                    <img src="./img/events/uptown-lights.jpg" alt="" class="w-22">
-                </div>
-                <p class="text-xl font-bold pt-4 pb-2 ">
-                    Live music with the "Uptown Lights" band
-                </p>
-                <p class="text-lg font-semibold text-gray-400">
-                    August 26 @ 20:30
-                </p>
-                <p class="pt-2">
-                    Pop, Soul, Rock n Roll
-                </p>
-            </div>
-
-            <div class="max-w-full h-auto">
-                <div class="">
-                    <img src="./img/opening.JPG" alt="" class="w-22">
-                </div>
-                <p class="text-xl font-bold pt-4 pb-2 ">
-                    80s & 90s evening with DJane Shorty
-                </p>
-                <p class="text-lg font-semibold text-gray-400">
-                    August 27
-                </p>
-            </div>
-
-            <div class="max-w-full h-auto">
-                <div class="">
-                    <img src="./img/opening.JPG" alt="" class="w-22">
-                </div>
-                <p class="text-xl font-bold pt-4 pb-2 ">
-                    DJ Günther (Güsche)
-                </p>
-                <p class="text-lg font-semibold text-gray-400">
-                    September 3
-                </p>
-                <p class="pt-2">
-                    Blues & Country evening
-                </p>
-            </div>
-        -->
-            <div class="max-w-full h-auto">
-                <div class="">
-                    <img src="./img/events/francois.jfif" alt="" class="w-22">
-                </div>
-                <p class="text-xl font-bold pt-4 pb-2 ">
-                    Francois "One Man Band" (Cape Towns Premier Solo Performer)
-                </p>
-                <p class="text-lg font-semibold text-gray-400">
-                    September 10 @ 20:30
-                </p>
-                <p class="pt-2">
-                    Soul, Blues, Funk and much more
-                </p>
-            </div>
-
-            <div class="max-w-full h-auto">
-                <div class="">
-                    <img src="./img/events/oktoberfest.jpg" alt="" class="w-22">
-                </div>
-                <p class="text-xl font-bold pt-4 pb-2 ">
-                    Oktoberfest
-                </p>
-                <p class="text-lg font-semibold text-gray-400">
-                    September 24
-                </p>
-                <p class="pt-2">
-                    Food and DJ setting the fitting atmosphere
-                </p>
-            </div> 
-
-            <div class="max-w-full h-auto">
-                <div class="">
-                    <img src="./img/events/mirage_party.jpg" alt="" class="w-22">
-                </div>
-                <p class="text-xl font-bold pt-4 pb-2 ">
-                    Mirage Disco Night
-                </p>
-                <p class="text-lg font-semibold text-gray-400">
-                    October 8 @ 21:00 till 3:00
-                </p>
-                <p class="pt-2">
-                    Dj‘s Ama und René 
-                    mit dem besten Sound aller Zeiten..
-                </p>
-            </div>
-
-            <div class="max-w-full h-auto">
-                <div class="">
-                    <img src="./img/events/scramblers.jpg" alt="" class="w-22">
-                </div>
-                <p class="text-xl font-bold pt-4 pb-2 ">
-                    "The Scramblers" - Rock n Roll at its best
-                </p>
-                <p class="text-lg font-semibold text-gray-400">
-                    October 15 @ 20:30
-                </p>
-            </div>
-
-            <div class="max-w-full h-auto">
-                <div class="">
-                    <img src="./img/events/frozenroom-vandox.jpg" alt="" class="w-22">
-                </div>
-                <p class="text-xl font-bold pt-4 pb-2 ">
-                    "Van Dox" and "Frozen Room" - Rock at its finest
-                </p>
-                <p class="text-lg font-semibold text-gray-400">
-                    December 3 @ 20:00
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery section --> 
-    <section class="col-span-3 relative sm:px-32 mt-32 w-full font-playfair">
-        <div class="header text-5xl md:text-7xl text-center uppercase font-bold -ml-1 w-full">
-            Photo Gallery
-        </div>
-        <!-- Image section --> 
-        <div class="mt-16 block ml-auto mr-auto">
-            <!--image slider start-->
-            <div class="slider">
-                <div class="slides">
-                <!--radio buttons start-->
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <input type="radio" name="radio-btn" id="radio4">
-                <!--radio buttons end-->
-                <!--slide images start-->
-                <div class="slide first">
-                    <img src="./img/fifth.jpg" alt="placeholder" class="object-cover">
-                </div>
-                <div class="slide">
-                    <img src="./img/seventh.JPG" alt="placeholder" class="object-cover">
-                </div>
-                <div class="slide">
-                    <img src="./img/sixth.JPG" alt="placeholder" class="object-cover">
-                </div>
-                <!--slide images end-->
-                <!--automatic navigation start-->
-                <div class="navigation-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                    <div class="auto-btn4"></div>
-                </div>
-                <!--automatic navigation end-->
-                </div>
-                <!--manual navigation start-->
-                <div class="navigation-manual">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-                <label for="radio4" class="manual-btn"></label>
-                </div>
-                <!--manual navigation end-->
-            </div>
-            <!--image slider end-->
-        </div>
-    </section>
-    
-    <!-- Footer section -->
-    <footer class="text-center col-span-3 font-playfair relative text-md mt-60 md:min-h-[400px] min-h-[900px]">
-        <div class="grid gap-8 md:grid-cols-4 lg:grid-cols-5 mt-10 px-32">
-            <div class="flex flex-col text-center items-center order-1">
-                <span class="font-semibold">Sitemap</span>
-                <span class="mt-4">
-                    <a href="./index.html">Home</a> <br />
-                    <!-- 
-                    <a href="./drinks.html">Drinks</a> <br /> -->
-                    <a href="./events.html">Events</a> <br />
-                    <a href="./contact.html">Contact</a> <br />
-                </span>
-            </div>
-            <div class="flex flex-col text-center items-center order-2">
-                <span class="font-semibold">Address</span>
-                <span class="mt-4">
-                    Frankies Bar <br />
-                    Kammistrasse 11 <br />
-                    3800 Interlaken <br />
-                </span>
-            </div>
-            <div class="order-first col-span-full lg:col-span-1 lg:order-3 mx-auto">
-                <div class="max-w-[200px]">
-                    <img src="./img/shared/frankies-logo.png" alt="">
-                </div>
-            </div>
-            <div class="flex flex-col text-center items-center order-4">
-                <span class="font-semibold">Opening times</span>
-                <span class="mt-4">
-                    Mon: Closed <br />
-                    Tue: Closed <br />
-                    Wed: 16.00 – 23.30 <br />
-                    Thu: 16.00 – 00.30 <br />
-                    Fri: 16.00 – 00.30 <br />
-                    Sat: 16.00 - 00.30 <br />
-                    Sun: Closed
-                </span>
-            </div>
-            <div class="flex flex-col text-center items-center order-5">
-                <span class="font-semibold">Social Media</span>
-                <span class="mt-4">
-                    Instagram <br />
-                    Facebook
-                </span>
-            </div>
-        </div>
-        <div class="text-center py-16">
-            Copyright © Frankies Bar 2022 - Website by Justin Ceronio
-        </div>
-    </footer>
+        <!-- Gallery section --> 
+        <gallery></gallery>
+        
+        <!-- Footer section -->
+        <frankies-footer></frankies-footer>
     </div>
-    <script src="./main.js"></script>
+
+    <!-- Import App -->
+    <script src="./vue.js"></script>
+
+    <!-- Import Components -->
+    <script src="./components/Header.js"></script>
+    <script src="./components/events/EventHero.js"></script>
+    <script src="./components/events/EventList.js"></script>
+    <script src="./components/events/Gallery.js"></script>
+    <script src="./components/Footer.js"></script>
+
+    <!-- Mount App -->
+    <script>
+        const mountedApp = app.mount('#app')
+    </script>
 </body>
 </html>
