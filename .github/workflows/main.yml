@@ -13,4 +13,4 @@ jobs:
       with:
         server: lx24.hoststar.hosting
         username: frankies-interlaken.ch
-        password: ${{ secrets.ftp_password }}
+        password: ${{ secrets.SSH_PRIVATE_KEY }}
