@@ -26,7 +26,7 @@ jobs:
           username: frankies-interlaken.ch
           server: lx24.hoststar.hosting
           port: 5544 # default is 22
-          password: ${{ secrets.SFTP_PASSWORD }}
+          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
  
           
           # will put all file under this path
