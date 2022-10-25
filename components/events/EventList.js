@@ -1,23 +1,5 @@
 var eventList = [
     {
-      title: "Francois 'One Man Band' (Cape Towns Premier Solo Performer)",
-      time: "September 10 @ 20:30",
-      text: "Soul, Blues, Funk and much more",
-      image: "./img/events/francois.jfif"
-    },
-    {
-      title: "Oktoberfest",
-      time: "September 24",
-      text: "Food and DJ setting the fitting atmosphere",
-      image: "./img/events/oktoberfest.jpg"
-    },
-    {
-      title: "Mirage Disco Night",
-      time: "October 8 @ 21:00 till 3:00",
-      text: "Dj‘s Ama und René mit dem besten Sound aller Zeiten..",
-      image: "./img/events/mirage_party.jpg"
-    },
-    {
       title: "'The Scramblers' - Rock n Roll at its best",
       time: "October 15 @ 20:30",
       text: "",
@@ -28,6 +10,24 @@ var eventList = [
       time: "December 3 @ 20:00",
       text: "",
       image: "./img/events/frozenroom-vandox.jpg"
+    },
+    {
+      title: "DJ Güsche - Country & Blues evening",
+      time: "October 29 @ 20:00",
+      text: "",
+      image: "./img/homepage/DSCF0095.JPG"
+    },
+    {
+      title: "Mirage Disco Night",
+      time: "December 10 @ 20:00 till 3:00",
+      text: "Dj‘s Ama und René mit dem besten Sound aller Zeiten..",
+      image: "./img/events/mirage_party.jpg"
+    },
+    {
+      title: "Hell Brothers",
+      time: "December 17",
+      text: "Folk, Rock, Blues",
+      image: "./img/events/hell-brothers.jpg"
     }
 ]
 app.component('event-list', {
